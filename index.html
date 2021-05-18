@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1.0.3/dist/viewport-extra.min.js"></script>
+  <script>
+    // 最小幅だけ設定
+    new ViewportExtra(375)
+    // 最大幅を設定
+    new ViewportExtra({ minWidth: 360, maxWidth: 414 })
+  </script>
+  <!-- リセットcssの読み込み -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <!-- ▼swaiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- ▼style.cssの読み込みの記述を書く -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- ▼font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <!-- ▼google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+</head>
+
+<body>
+  <!-- ▼ここからマークアップを行う -->
+  <header class="header">
+    <h1 class="header-logo"><img src="img/logo.png" alt="PON DESIGN"></h1>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item"><a href="#">NEWS</a></li>
+        <li class="header-nav__item"><a href="#">SERVICE</a></li>
+        <li class="header-nav__item"><a href="#">WORKS</a></li>
+        <li class="header-nav__item"><a href="#">COMPANY</a></li>
+        <li class="header-nav__item"><a href="#">RECRUIT</a></li>
+        <li class="header-nav__item"><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="mv">
+    <div class="mv__inner">
+      <div class="mv-heading">
+        <h2 class="mv-heading__ttl">WEB DESIGN SPECIALIST</h2>
+        <h3 class="mv-heading__sub-ttl">お客様の夢を叶えるWebサイトを制作</h3>
+      </div>
+      <div class="mv__link"><a class="contact-btn" href="">CONTACT</a></div>
+    </div>
+    <div class="mv__scroll">SCROLL</div>
+  </div>
+  <div class="contents">
+    <section class="news">
+      <div class="inner">
+        <div class="news-heading">
+          <h2 class="heading-primary">NEWS</h2>
+          <p class="heading-primary__sub">お知らせ</p>
+        </div>
+        <div class="news-list">
+          <ul class="news-list__list">
+            <li class="news-list__item">
+              <div class="news-list__heading">
+                <time datetime="2030-02-01">2030.02.01</time>
+                <p class="news-list__label">お知らせ</p>
+              </div>
+              <p class="news-list__txt">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</p>
+            </li>
+
+            <li class="news-list__item">
+              <div class="news-list__heading">
+                <time datetime="2030-01-25">2030.01.25</time>
+                <div class="news-list__label">制作実績</div>
+              </div>
+              <p class="news-list__txt">Smoothiesta様のWebサイトを制作いたしました</p>
+            </li>
+
+            <li class="news-list__item">
+              <div class="news-list__heading">
+                <time datetime="2030-01-20">2030.01.20</time>
+                <div class="news-list__label">採用</div>
+              </div>
+              <p class="news-list__txt">Webデザイナーを１名募集中です！</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="inner">
+        <div class="service-heading">
+          <h2 class="heading-primary">
+            SERVICE<span class="heading-primary__sub">事業内容</span>
+          </h2>
+        </div>
+        <div class="service-wrapper">
+          <div class="serviceBox">
+            <div class="serviceBox__img"><img src="img/service1.jpg" alt=""></div>
+            <p class="serviceBox__ttl">Webサイト制作</p>
+            <p class="serviceBox__txt">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
+          </div>
+          <div class="serviceBox">
+            <div class="serviceBox__img"><img src="img/service2.jpg" alt=""></div>
+            <p class="serviceBox__ttl">Webサイト運用</p>
+            <p class="serviceBox__txt">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。</p>
+          </div>
+          <div class="serviceBox">
+            <div class="serviceBox__img"><img src="img/service3.jpg" alt=""></div>
+            <p class="serviceBox__ttl">アプリ開発</p>
+            <p class="serviceBox__txt">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
+          </div>
+        </div>
+        <div class="service__link c-purple"><a class="btn" href="#">MORE</a></div>
+      </div>
+    </section>
+    <section class="works">
+      <div class="inner">
+        <!-- Slider main container -->
+        <div class="works__img-wrapper">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/swaiper1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/swaiper2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/swaiper3.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="works-contents">
+          <div class="works-heading">
+            <h2 class="heading-primary">
+              WORKS<span class="heading-primary__sub">制作実績</span>
+            </h2>
+          </div>
+          <p class="works-contens__txt">様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します</p>
+          <div class="works__link c-purple"><a class="btn" href="#">MORE</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="company">
+      <div class="inner">
+        <div class="company-heading">
+          <h2 class="heading-primary">
+            COMPANY<span class="heading-primary__sub">私たちについて</span>
+          </h2>
+        </div>
+        <h3 class="company__ttl b-y">サイトのゴール＝夢を叶えること</h3>
+        <p class="company__txt">
+          お客様の夢を叶えること。<br>それがWebサイトのゴールであり、私たちが目指すことです。<br>だからこそちゃんと成果を出すサイトを全力でお作りします。<br>お客様の笑顔を見たい。<br>夢を実現する手助けをさせてください。
+        </p>
+        <div class="company__link c-purple"><a class="btn" href="#">MORE</a></div>
+      </div>
+    </section>
+    <section class="recruit">
+      <div class="inner">
+        <div class="recruit__contents">
+          <div class="recruit-heading">
+            <h2 class="heading-primary">
+              RECRUIT<span class="heading-primary__sub">採用情報</span>
+            </h2>
+          </div>
+          <p class="recruit__txt">私たちと一緒に働きませんか？</p>
+          <div class="works__link c-purple"><a class="btn" href="#">MORE</a></div>
+        </div>
+        <div class="recruit__img"><img src="img/recruit-img.jpg" alt=""></div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="inner">
+        <div class="contact-heading">
+          <h2 class="heading-primary">
+            CONTACT<span class="heading-primary__sub">お問い合わせ</span>
+          </h2>
+        </div>
+        <p class="contact__txt">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+        <div class="contact__link c-purple"><a class="btn" href="#">MORE</a></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="#">NEWS</a></li>
+          <li class="footer-nav__item"><a href="#">SERVICE</a></li>
+          <li class="footer-nav__item"><a href="#">WORKS</a></li>
+          <li class="footer-nav__item"><a href="#">COMPANY</a></li>
+          <li class="footer-nav__item"><a href="#">RECRUIT</a></li>
+          <li class="footer-nav__item"><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">©PON DESIGN</p>
+    </footer>
+    <div class="page-top">
+      <a href="#" class="page-top__link"><span class="fas fa-arrow-up"></span></a>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

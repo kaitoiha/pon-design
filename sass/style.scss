@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/*==========================
+        共通
+============================*/
+// ブレークポイント
+$breakpoints: (
+  "sp": "(max-width: 767px)",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+.inner {
+  width: 1110px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: inherit;
+  @include mq('sp'){
+    padding: 0 20px;
+  }
+}
+body {
+  font-family: "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    Meiryo, sans-serif;
+  color: #333;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style-type: none;
+}
+p {
+  margin: 0;
+}
+.contact-btn {
+  width: 220px;
+  height: 60px;
+  padding: 21px 72px 21px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  font-size: 15px;
+  display: inline-block;
+}
+.btn {
+  width: 200px;
+  height: 60px;
+  padding: 21px 72px 21px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  font-size: 15px;
+  display: inline-block;
+  background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0%
+    no-repeat padding-box;
+  font-size: 14px;
+  font-weight: bold;
+}
+$color-purple: #391e88;
+.heading-primary {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: $color-purple;
+  &__sub {
+    font-size: 13px;
+    font-weight: normal;
+    display: block;
+    color: $color-purple;
+  }
+}
+/*==========================
+        header
+============================*/
+@import "_header";
+/*==========================
+        mv
+============================*/
+@import "_mv.scss";
+/*==========================
+        news
+============================*/
+@import "_news.scss";
+/*==========================
+        service
+============================*/
+@import "_service.scss";
+/*==========================
+        works
+============================*/
+@import "_works.scss";
+/*==========================
+        company
+============================*/
+@import "_company.scss";
+/*==========================
+        recruit
+============================*/
+@import "_recruit.scss";
+/*==========================
+        contact
+============================*/
+@import "_contact.scss";
+/*==========================
+        footer
+============================*/
+@import "_footer.scss";
+/*==========================
+        page-top
+============================*/
+.page-top {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  z-index: 1;
+  &__link {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #391e88;
+  }
+}

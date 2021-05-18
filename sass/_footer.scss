@@ -1,0 +1,23 @@
+.footer{
+  background-color: #120E19;
+  padding: 60px 0 60px;
+  &-nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  &-nav__item{
+      margin-right: 33px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    &-nav__item:last-child{
+      margin-right: 0;
+    }
+    .copyright{
+      font-size: 10px;
+      color: #A798B7;
+      text-align: center;
+    }
+}

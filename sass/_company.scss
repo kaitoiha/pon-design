@@ -1,0 +1,31 @@
+.company {
+  margin-bottom: 65px;
+  .inner {
+    max-width: 864px;
+    width: 100%;
+    height: 615px;
+    background: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+  }
+  &-heading{
+    padding-top: 135px;
+    margin-bottom: 30px;
+  }
+  &__ttl{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  .b-y{
+    background: linear-gradient(transparent 70%, #f5f534 0%);
+  }
+  &__txt{
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+  }
+}

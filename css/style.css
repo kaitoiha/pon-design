@@ -134,6 +134,10 @@ p {
   margin-right: 0;
 }
 
+.header #navArea {
+  display: none;
+}
+
 .active {
   background-color: #21054d;
 }
@@ -148,6 +152,9 @@ p {
   }
   .header-nav {
     display: none;
+  }
+  .header #navArea {
+    display: block;
   }
 }
 

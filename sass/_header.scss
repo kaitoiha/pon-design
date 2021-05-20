@@ -21,6 +21,9 @@
   &-nav__item:last-child {
     margin-right: 0;
   }
+  #navArea{
+    display: none;
+  }
 }
 .active {
   background-color: #21054d;
@@ -35,5 +38,8 @@
     &-nav {
       display: none;
     }
+    #navArea{
+    display: block;
+  }
   }
 }

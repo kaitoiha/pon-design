@@ -1,7 +1,4 @@
 .header {
-    .btn-menu{
-        display: none;
-    }
   position: fixed;
   z-index: 10;
   display: flex;
@@ -37,58 +34,6 @@
     }
     &-nav {
       display: none;
-    }
-    .btn-menu {
-      position: relative;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      padding: 5px;
-      cursor: pointer;
-      text-align: center;
-      opacity: 0.9;
-      border: none;
-      outline: none;
-      background: none;
-      -webkit-appearance: none;
-      appearance: none;
-      font-size: 12px;
-      &__line {
-        position: relative;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 2px;
-        border-radius: 4px;
-        background-color: #fff;
-        &::before {
-          position: absolute;
-          bottom: -11px;
-          left: 0;
-          display: block;
-          width: 100%;
-          height: 2px;
-          content: "";
-          transition: inherit;
-          border-radius: 4px;
-          background-color: #fff;
-        }
-        &::after {
-          position: absolute;
-          bottom: 11px;
-          left: 0;
-          display: block;
-          width: 100%;
-          height: 2px;
-          content: "";
-          transition: inherit;
-          border-radius: 4px;
-          background-color: #fff;
-        }
-      }
     }
   }
 }

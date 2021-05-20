@@ -42,7 +42,6 @@
     text-transform: uppercase;
     color: #fff;
     font-size: 12px;
-    font-size: 0.75rem;
     writing-mode: vertical-lr;
     &::after {
       position: absolute;
@@ -54,5 +53,22 @@
       animation: scrollDownLine 1.5s cubic-bezier(1, 0, 0, 1) infinite;
       background: #fff;
     }
+  }
+}
+@include mq("sp") {
+  .mv__inner{
+    padding: 0 42px 0 50px;
+  }
+  .mv-heading__ttl{
+    font-size: 48px;
+    text-align: left;
+  }
+  .mv-heading__sub-ttl{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+  }
+  .mv__link{
+    text-align: left;
   }
 }
